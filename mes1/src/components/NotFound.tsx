@@ -1,7 +1,7 @@
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 export default function NotFound() {
-    const NavigateFunction = useNavigate();
+    const NavigateFunction = useNavigate(); 
     return (
         <section className="flex flex-col items-center justify-center text-center gap-4 py-16">
             <p className="text-6xl font-bold text-gray-800">404</p>
@@ -14,7 +14,7 @@ export default function NotFound() {
                 }}
             >
                 Go home
-            </button>
+            </button>    
         </section>
     );
 }
