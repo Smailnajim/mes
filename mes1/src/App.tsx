@@ -2,6 +2,7 @@ import { Route, Routes } from "react-router-dom"
 import Test from "./components/test"
 import Index from "./Layouts";
 import Test2 from "./components/test2";
+import NotFound from "./components/NotFound";
 
 
 export default function App() {
@@ -11,6 +12,7 @@ export default function App() {
       <Route path="/" element={<Index />}>
         <Route index element={<Test/>}/>
         <Route path="new" element={<Test2/>}/>
+        <Route path="*" element={<NotFound />} />
       </Route>
     </Routes>
   );
