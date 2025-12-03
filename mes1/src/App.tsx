@@ -1,8 +1,10 @@
 import { Route, Routes } from "react-router-dom"
-import Test from "./components/test"
+import Test from "./components/Articles"
 import Index from "./Layouts";
-import Test2 from "./components/test2";
+import Article from "./components/Article";
 import NotFound from "./components/NotFound";
+import Contact from "./components/Contact";
+import Propos from "./components/Propos";
 
 
 export default function App() {
@@ -11,7 +13,9 @@ export default function App() {
     <Routes>
       <Route path="/" element={<Index />}>
         <Route index element={<Test/>}/>
-        <Route path="Contact/:param?" element={<Test2/>}/>
+        <Route path="contact" element={<Contact/>}/>
+        <Route path="propos" element={<Propos/>}/>
+        <Route path="article/:id" element={<Article/>}/>
         <Route path="*" element={<NotFound />} />
       </Route>
     </Routes>
