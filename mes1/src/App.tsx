@@ -11,7 +11,7 @@ export default function App() {
     <Routes>
       <Route path="/" element={<Index />}>
         <Route index element={<Test/>}/>
-        <Route path="new" element={<Test2/>}/>
+        <Route path="Contact/:param?" element={<Test2/>}/>
         <Route path="*" element={<NotFound />} />
       </Route>
     </Routes>

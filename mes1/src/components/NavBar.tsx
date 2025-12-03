@@ -12,7 +12,7 @@ export default function NavBar() {
             </li>
 
             <li className="text-white font-medium hover:text-blue-400 transition duration-200">
-                <Link to="/contact">Contact</Link>
+                <Link to="/contact/06000">Contact</Link>
             </li>
         </ul>
     );
